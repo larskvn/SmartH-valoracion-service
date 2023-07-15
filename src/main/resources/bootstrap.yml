@@ -1,0 +1,23 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: validation-service
+  datasource:
+    url: jdbc:mysql://smarth-db.chenbke79stf.us-east-1.rds.amazonaws.com:3306/serviceValoracion?useSSL=false
+    username: admin
+    password: kl1kan247
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    datasource-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+#spring:
+#  application:
+#    name: validation-service
+#  cloud:
+#    config:
+#      enable: true
+#      uri: http://localhost:8081

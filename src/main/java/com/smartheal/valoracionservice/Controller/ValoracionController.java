@@ -35,8 +35,8 @@ public class ValoracionController {
     @GetMapping("/byuser/{medicId}")
     public ResponseEntity<List<Valoracion>> getByUserId(@PathVariable("medicId") int medicId){
         List<Valoracion> valoracions= valoracionService.findByUserId(medicId);
-        if (valoracions.isEmpty())
-            return ResponseEntity.noContent().build();
+       /* if (valoracions.isEmpty())
+            return ResponseEntity.noContent().build();*/
         return ResponseEntity.ok(valoracions);
 
     }
